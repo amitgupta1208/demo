@@ -1,0 +1,16 @@
+<h2>Product List</h2>
+<table class="border border-2">
+    <tHead >
+        <tr >
+            <th>Products</th>
+            <th class="border border-2">Price</th>
+            <th class="border border-2">Add To Cart</th>
+        </tr>
+    </tHead>
+    <tr class="border border-2" *ngFor="let product of products" >
+        <td class="border border-2">{{product.title}}</td>
+        <td class="border border-2">{{product.price}}</td>
+        <td class="border border-2"><button class="btn btn-primary" (click)="addToCart()" >Add To Cart</button></td>
+        <!-- <ul>{{product.title}}</ul> -->
+    </tr>
+</table>
